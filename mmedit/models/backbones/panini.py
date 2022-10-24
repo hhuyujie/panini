@@ -329,7 +329,7 @@ class Panini_MFR(nn.Module):
                     print("miss!")
             print("load stat_edict for deg_encoder")
             self.deg_encoder.load_state_dict(model_dict)
-            self.deg_encoder.requires_grad_(True)
+            self.deg_encoder.requires_grad_(False)
 
         # encoder
         self.encoder = nn.ModuleList()
